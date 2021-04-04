@@ -1,0 +1,9 @@
+{
+	"id": 0,
+	"email": "belkamelmohamed@gmail.com",
+	"full_name": "Belkamel Mohamed",
+	"ville": "marrakech",
+	"adresse_clinique": "gueliz",
+	"photo_de_profile": "https://i.ibb.co/fCM6KYZ/depositphotos-78193826-stock-illustration-medical-logo-health-care-center.jpg",
+	"expertise": ["gynecologue", "generqsd"]
+}
