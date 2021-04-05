@@ -1,0 +1,28 @@
+# Use root/example as user/password credentials
+version: "3.1"
+
+services:
+  mysql:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    cap_add:
+      - SYS_NICE
+    restart: always
+    volumes:
+      - /home/mysqldata:/var/lib/mysql
+    ports:
+      - 3307:3306
+    environment:
+      MYSQL_PASSWORD: 2468147aZ!!
+      MYSQL_USER: root
+      MYSQL_DATABASE: cliniqueDB
+      MYSQL_ROOT_HOST: 13.51.62.134
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8080
+
+volumes:
+  myapp:
